@@ -103,34 +103,5 @@ public class AddressBook {
             System.out.println("Contact not find");
         }
     }
-
-    public void getMenu() {
-        boolean change = false;
-        do {
-            System.out.println("\n***** Address Book operation menu :***** ");
-            System.out.println("1.Add Contacts To Address Book \n2.Edit Existing Contacts \n3.Delete Contacts \n4.Exit Address book ");
-            System.out.println("\nEnter your choice : ");
-            String choice = scanner.next();
-            switch (choice) {
-                case "1":
-                    addContact();
-                    break;
-                case "2":
-                    editContact();
-                    break;
-                case "3":
-                    deleteContact();
-                    break;
-                case "4":
-                    System.out.println("Thank you for using Address Book !");
-                    change = true;
-                    break;
-                default:
-                    System.out.println("Please Enter Valid Option");
-                    break;
-            }
-            System.out.println("-------------------------------------------------------------------------------------------------");
-        } while (!change);
-    }
 }
 
